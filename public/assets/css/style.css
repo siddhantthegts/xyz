@@ -1,0 +1,1554 @@
+:root {
+    --primary-color: #ad8455;
+    --secondary-color: #424140;
+    --font-1: "Nunito", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-1);
+}
+
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    appearance: none;
+}
+
+.disabled {
+    opacity: 0.65;
+    pointer-events: none;
+}
+
+/* =========== Hide Element =========== */
+.hidden {
+    display: none;
+}
+
+@media screen and (min-width: 640px) {
+    .sm\:hidden {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .md\:hidden {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .lg\:hidden {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .xl\:hidden {
+        display: none;
+    }
+}
+
+/* =========== Side-Menu-Btn =========== */
+.owl-carousel .owl-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    pointer-events: none;
+}
+.owl-carousel .owl-nav button {
+    font-size: 18px !important;
+    color: var(--primary-color) !important;
+    pointer-events: all;
+}
+
+.owl-carousel .owl-dots {
+    text-align: center;
+}
+.owl-carousel .owl-dots .owl-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    opacity: 0.65;
+    margin: 0 4px;
+}
+.owl-carousel .owl-dots .owl-dot.active {
+    opacity: 1;
+}
+
+.owl-carousel.equal-height .owl-stage {
+    display: flex;
+}
+.owl-carousel.equal-height .slide {
+    height: 100%;
+}
+
+.colored .owl-carousel .owl-nav button {
+    color: #fff !important;
+}
+.colored .owl-carousel .owl-dots .owl-dot {
+    background-color: #fff;
+}
+
+/* =========== Sec-Heading =========== */
+.sec-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.sec-heading::after {
+    content: "";
+    display: block;
+    width: 100%;
+    max-width: 80px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    margin: 5px auto 0;
+}
+.sec-heading h2 {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0;
+}
+.sec-heading p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #777;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.colored .sec-heading h2 {
+    color: #fff;
+}
+.colored .sec-heading p {
+    color: #fff;
+}
+
+/* =========== Side-Menu-Btn =========== */
+.side-menu-btn {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: transparent;
+    font-size: 24px;
+    color: #333;
+    padding: 0px 10px;
+}
+
+/* =========== Request-Callback-Btn =========== */
+.request-callback-btn {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 3px;
+    /* box-shadow: 0 0 15px #ccc; */
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    transition: 0.3s ease;
+}
+.request-callback-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+/* =========== Steps-Box =========== */
+.steps-box {
+    margin-bottom: 15px;
+}
+.steps-box .steps-bar {
+    border-radius: 10px;
+    background-color: #ccc;
+    overflow: hidden;
+}
+.steps-box .steps-bar .steps-done {
+    height: 3px;
+    background-color: var(--primary-color);
+}
+.steps-box .steps {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-top: 8px;
+}
+.steps-box .steps .text {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+/* =========== Form-1 =========== */
+.form-1 {
+    width: 100%;
+}
+.form-1 form {
+    /* max-width: 460px; */
+    box-shadow: 0 10px 10px #00000029;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    margin: 0 auto;
+}
+.form-1 form .title {
+    font-family: var(--font-1);
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 18px;
+}
+.form-1 form .input-field {
+    position: relative;
+    margin-bottom: 20px;
+}
+.form-1 form .input-field input,
+.form-1 form .input-field label,
+.form-1 form .input-field textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    padding: 8px 12px;
+}
+.form-1 form .input-field textarea {
+    display: block;
+    margin-bottom: -3px;
+}
+.form-1 form .input-field.file label p::after,
+.form-1 form .input-field input::placeholder,
+.form-1 form .input-field textarea::placeholder {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+    color: #aaa;
+}
+.form-1 form .input-field.file label p {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-right: 120px;
+    margin: 0;
+}
+.form-1 form .input-field.file input ~ label p::after {
+    content: "Attachment *";
+}
+.form-1 form .input-field.file input ~ label.selected p {
+    color: #333;
+}
+.form-1 form .input-field.file input ~ label.selected p::after {
+    display: none;
+}
+.form-1 form .input-field.file label span {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 120px;
+    height: 100%;
+    border: 1px solid #ccc;
+    background-color: var(--primary-color);
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.form-1 form .input-field.terms {
+    margin: 6px 0;
+}
+.form-1 form .input-field.terms label {
+    background-color: transparent;
+    display: flex;
+    user-select: none;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+}
+.form-1 form .input-field.terms label input[type="checkbox"] {
+    display: none;
+}
+.form-1 form .input-field.terms label .checkbox-btn {
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #fff;
+    font-size: 10px;
+    margin-right: 8px;
+}
+.form-1 form .input-field.terms label input:checked ~ .checkbox-btn {
+    border: none;
+    background-color: var(--primary-color);
+}
+.form-1 form .input-field.terms label p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+.form-1 form .input-field.terms label p a {
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+.form-1 form .input-field input.error-msg {
+    border-color: red;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.12);
+}
+.form-1 form .input-field span.error-msg {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-1);
+    font-size: 12px;
+    color: red;
+    margin-top: 3px;
+    margin-bottom: -8px;
+}
+.form-1 form .input-field span.error-msg::after {
+    content: "\f06a";
+    font-family: "Font Awesome 5 Pro";
+}
+.form-1 form .input-submit {
+    text-align: center;
+}
+.form-1 form .input-submit input,
+.form-1 form .input-submit button {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 100px;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 8px 18px;
+    transition: 0.3s ease;
+}
+.form-1 form .input-submit input:hover,
+.form-1 form .input-submit button:hover {
+    background-color: var(--secondary-color);
+}
+
+.form-1 form .form-steps {
+    display: none;
+}
+.form-1 form .form-steps.active {
+    display: block;
+}
+
+@media screen and (max-width: 575px) {
+    .form-1 form .title {
+        font-size: 24px;
+    }
+}
+
+/* ======================== Header Area ======================== */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 15px #ccc;
+}
+
+.top-header {
+    background-color: var(--primary-color);
+}
+.top-header .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 0;
+}
+.top-header .header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.top-header .header ul li {
+    display: inline-block;
+}
+.top-header .header ul li a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #fff;
+    transition: 0.2s;
+}
+.top-header .header ul li a:hover {
+    color: var(--secondary-color);
+}
+.top-header .header .social-links li a {
+    display: inline-block;
+    margin-right: 5px;
+}
+.top-header .header .contact-detail li a {
+    display: inline-block;
+    margin-left: 8px;
+}
+.top-header .header .contact-detail li a i {
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 575px) {
+    .top-header .header .contact-detail li a {
+        font-size: 12px;
+    }
+}
+.main-header .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.main-header .header .logo {
+    padding-right: 20px;
+}
+.main-header .header .logo img {
+    width: 100%;
+    max-width: 140px;
+}
+.main-header .header .nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.main-header .header .nav li {
+    display: inline-block;
+    margin-left: 3px;
+}
+.main-header .header .nav li button {
+    margin-left: 12px;
+}
+.main-header .header .nav li a {
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 3px;
+    background-color: transparent;
+    color: var(--primary-color);
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 3px 10px;
+    transition: 0.3s ease;
+}
+.main-header .header .nav li a:hover {
+    color: var(--secondary-color);
+}
+
+@media screen and (max-width: 575px) {
+    .top-header .header .social-links {
+        display: none;
+    }
+    .top-header .header ul li a {
+        font-size: 13px;
+    }
+    .top-header .header .contact-detail li a span {
+        /* display: none; */
+    }
+}
+
+/* ======================== End Header Area ======================== */
+
+/* ======================== Side-Menu Area ======================== */
+.side-menu-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.side-menu-area.active {
+    pointer-events: all;
+}
+
+.side-menu-area .overlay {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.side-menu-area.active .overlay {
+    opacity: 1;
+}
+
+.side-menu-area .side-menu-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 280px;
+    height: 100%;
+    transform: translateX(-120%);
+    transition: 0.3s ease;
+}
+
+.side-menu-area.active .side-menu-box {
+    transform: translateX(0%);
+}
+
+.side-menu-area .side-menu-box .side-menu::-webkit-scrollbar {
+    /* appearance: none; */
+    display: none;
+    width: 0% !important;
+}
+
+.side-menu-area .side-menu-box .side-menu {
+    scrollbar-width: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-menu-area .side-menu-box .side-menu .header {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.side-menu-area .side-menu-box .side-menu .header .logo {
+    padding-right: 10px;
+}
+.side-menu-area .side-menu-box .side-menu .header .logo img {
+    max-width: 100%;
+}
+.side-menu-area .side-menu-box .side-menu .header .close-btn button {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-left: 1px solid #ccc;
+}
+.side-menu-area .side-menu-box .side-menu .nav {
+    padding: 15px;
+    margin-top: 25px;
+}
+.side-menu-area .side-menu-box .side-menu .nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.side-menu-area .side-menu-box .side-menu .nav li a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+.side-menu-area .side-menu-box .side-menu .nav li button {
+    margin-top: 10px;
+}
+.side-menu-area .side-menu-box .side-menu .social-links {
+    margin-top: auto;
+}
+.side-menu-area .side-menu-box .side-menu .social-links ul {
+    list-style: none;
+    padding: 15px;
+    margin: 0;
+    border-top: 1px solid #ccc;
+}
+.side-menu-area .side-menu-box .side-menu .social-links li {
+    display: inline-block;
+    margin-right: 8px;
+}
+.side-menu-area .side-menu-box .side-menu .social-links li a {
+    font-size: 16px;
+    color: #333;
+}
+.side-menu-area .side-menu-box .side-menu .social-links li p {
+    font-weight: 600;
+    margin: 0;
+}
+/* ======================== End Side-Menu Area ======================== */
+
+/* ======================== Hero-Sec Area ======================== */
+.hero-sec {
+    position: relative;
+    background-image:linear-gradient(
+        rgba(66, 65, 64, 0.6), rgba(92, 92, 92, 0.8)
+    ),url(../img/Untitled\ \(1600\ x\ 1000\ px\)_20240219_131344_0000.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 80px 0;
+}
+.hero-sec .content-box .title {
+    font-size: 58px;
+    font-weight: 800;
+    color: #111;
+    font-family: var(--bs-font-sans-serif);
+}
+.hero-sec .content-box .tag-line {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: #555;
+    margin: 25px 0 60px;
+}
+.hero-sec .content-box .tag-line span {
+    display: inline-block;
+    margin: 0 8px;
+}
+.hero-sec .content-box .tag-line::after,
+.hero-sec .content-box .tag-line::before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    background-color: #555;
+}
+.hero-sec .content-box .title-2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+.hero-sec .content-box ul {
+    padding-left: 16px;
+    margin-bottom: 60px;
+}
+.hero-sec .content-box ul li {
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 8px;
+    margin-bottom: 10px;
+}
+.hero-sec .content-box ul li::marker {
+    content: "\f0a4";
+    font-family: "Font Awesome 5 Pro";
+    color: var(--primary-color);
+}
+.hero-sec .content-box .request-callback-btn {
+    font-size: 22px;
+    padding: 10px 18px;
+}
+
+@media screen and (max-width: 575px) {
+    .hero-sec {
+        padding: 50px 0;
+        background-image: linear-gradient(
+            rgba(66, 65, 64, 0.6), rgba(66, 65, 64, 0.6)
+        ),url(../img/hero-sec.jpg);
+    }
+    .hero-sec .content-box .title {
+        font-size: 28px;
+        color: #fff;
+    }
+    .hero-sec .content-box .tag-line {
+        font-size: 18px;
+        margin-bottom: 25px;
+        color: #d0d0d0;
+    }
+    .hero-sec .content-box .tag-line::after,
+    .hero-sec .content-box .tag-line::before  {
+        background-color: #d0d0d0;
+    }
+
+    .hero-sec .content-box .title-2 {
+        font-size: 24px;
+        color: #ffdab0;
+    }
+    .hero-sec .content-box ul li::marker {
+        color: #ffdab0;
+    }
+    .hero-sec .content-box ul li {
+        font-size: 15px;
+    }
+
+    .hero-sec .content-box ul {
+        color: #dfdfdf;
+    }
+}
+
+/* ======================== End Hero-Sec Area ======================== */
+
+/* ======================== About-Sec Area ======================== */
+.about-sec {
+    margin: 60px 0;
+}
+
+/* ======================== End About-Sec Area ======================== */
+
+/* ======================== Selected-SOP Area ======================== */
+.selected-sop {
+    background-color: var(--primary-color);
+    padding: 50px 0 60px;
+    margin: 60px 0;
+}
+.selected-sop-slider .slide .sop-img img {
+    width: 100%;
+    /* border: 1px solid #aaa;   */
+    background-color: #fff;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+        rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    padding: 10px;
+}
+.selected-sop-slider {
+    padding: 0 50px;
+}
+.selected-sop-slider .owl-nav {
+    margin: 0 -50px;
+}
+
+@media screen and (max-width: 575px) {
+    .selected-sop {
+        padding: 30px 0 40px;
+        margin: 40px 0;
+    }
+    .selected-sop-slider {
+        padding: 0;
+    }
+    .selected-sop-slider .owl-nav {
+        display: none !important;
+    }
+}
+
+/* ======================== End Selected-SOP Area ======================== */
+
+/* ======================== SOP-Samples Area ======================== */
+.sop-samples {
+    margin: 80px 0;
+}
+.sop-samples-slider .slide .sop-img img {
+    border: 1px solid #ccc;
+}
+.sop-samples-slider {
+    padding: 0 50px;
+}
+.sop-samples-slider .owl-nav {
+    margin: 0 -50px;
+}
+
+@media screen and (max-width: 575px) {
+    .sop-samples {
+        margin: 40px 0;
+    }
+    .sop-samples-slider {
+        padding: 0;
+    }
+    .sop-samples-slider .owl-nav {
+        display: none;
+    }
+}
+
+/* ======================== End SOP-Samples Area ======================== */
+
+/* ======================== SOP-Reviewed Area ======================== */
+.sop-reviewed {
+    position: relative;
+    background-color: var(--primary-color);
+    padding: 50px 0;
+}
+.sop-reviewed .form-1 form {
+    width: 100%;
+    max-width: 100%;
+    padding: 40px 30px;
+}
+.sop-reviewed .form-1 form .title {
+    margin-bottom: 0;
+}
+.sop-reviewed .form-1 form .tag-line {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+/* ======================== End SOP-Reviewed Area ======================== */
+
+/* ======================== SOP-Guidebook Area ======================== */
+.sop-guide-sec {
+    background-image: linear-gradient(
+            rgba(173, 132, 85, 0.15), rgba(66, 65, 64, 0.15)
+        ),
+        url(../img/sop-guide-sec.jpg);
+    background-size: cover;
+    background-position: left top;
+    padding: 80px 0;
+}
+.sop-guide-sec .content-box .title {
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.sop-guide-sec .content-box .tag-line {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.sop-guide-sec .content-box ul {
+    padding-left: 20px;
+}
+.sop-guide-sec .content-box ul li {
+    font-weight: 500;
+    padding-left: 6px;
+    margin-bottom: 3px;
+}
+
+@media screen and (max-width: 575px) {
+    .sop-guide-sec {
+        padding: 40px 0;
+    }
+    .sop-guide-sec .content-box .title {
+        font-size: 32px;
+    }
+    .sop-guide-sec .content-box .tag-line {
+        font-size: 20px;
+    }
+    .sop-guide-sec .form-1 {
+        margin-top: 25px;
+    }
+}
+
+/* ======================== End SOP-Guidebook Area ======================== */
+
+/* ======================== Services-Sec Area ======================== */
+.services-sec {
+    background-color: var(--primary-color);
+    padding: 80px 0;
+}
+
+.service-slider .h-100 {
+    height: 100%;
+    padding: 10px 0;
+}
+.service-card {
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #fff;
+    padding: 25px 20px;
+}
+.service-card .icon {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    /* background-color: var(--primary-color); */
+    /* padding: 12px; */
+    margin: 0 auto 15px;
+}
+.service-card .icon img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.service-card h4 {
+    font-family: var(--font-1);
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+.service-card p {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: justify;
+    color: #333;
+}
+
+.service-slider {
+    padding: 0 50px;
+}
+.service-slider .owl-nav {
+    margin: 0 -50px;
+}
+
+@media screen and (max-width: 575px) {
+    .services-sec {
+        padding: 50px 0;
+    }
+    .service-slider {
+        padding: 0;
+    }
+    .service-slider .owl-nav {
+        display: none;
+    }
+}
+
+/* ======================== End Services-Sec Area ======================== */
+
+/* ======================== Testimonials-Sec Area ======================== */
+.testimonials-sec {
+    margin: 80px 0;
+}
+.testimonials-sec .h-100 {
+    height: 100%;
+    padding: 10px 0;
+}
+.testimonial-card {
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+    padding: 25px;
+}
+.testimonial-card .info-box {
+    display: flex;
+    justify-content: space-between;
+}
+.testimonial-card .info-box .info {
+    display: inline-flex;
+    align-items: center;
+}
+.testimonial-card .info-box .info .qoute {
+    flex: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 14px;
+    margin-right: 8px;
+}
+.testimonial-card .info-box .info .qoute img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.testimonial-card .info-box .info .detail .name {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.testimonial-card .info-box .info .detail .country {
+    font-size: 12px;
+    font-weight: 600;
+    color: #777;
+}
+.testimonial-card .info-box .rating ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.testimonial-card .info-box .rating ul li {
+    display: inline-block;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+.testimonial-card .content-box {
+    padding-top: 25px;
+    color: #555;
+    text-align: justify;
+}
+
+.testimonial-slider {
+    padding: 0 50px;
+}
+.testimonial-slider .owl-nav {
+    margin: 0 -50px;
+}
+
+@media screen and (max-width: 575px) {
+    .testimonials-sec {
+        margin: 50px 0;
+    }
+    .testimonial-card .info-box .rating {
+        display: none;
+    }
+    .testimonial-slider {
+        padding: 0;
+    }
+    .testimonial-slider .owl-nav {
+        display: none;
+    }
+}
+
+/* ======================== End Testimonials-Sec Area ======================== */
+
+/* ======================== CTA-Sec Area ======================== */
+.cta-sec {
+    background-image: linear-gradient(
+            rgba(66, 65, 64, 0.8), rgba(66, 65, 64, 0.8)
+        ),
+        url(../img/cta-sec.png);
+    background-size: cover;
+    background-position: center center;
+    padding: 80px 0;
+    text-align: center;
+    color: #fff;
+}
+.cta-sec .title {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.cta-sec .content {
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.cta-sec .order-btn a {
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 18px;
+    transition: 0.3s ease;
+}
+.cta-sec .order-btn a:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+/* ======================== End CTA-Sec Area ======================== */
+
+/* ======================== Footer Area ======================== */
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    color: #fff;
+    padding: 25px 0;
+}
+footer h3 {
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+footer p {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+    footer h3 {
+        font-size: 18px;
+    }
+    footer p {
+        font-size: 12px;
+    }
+}
+
+/* ======================== End Footer Area ======================== */
+
+/* ======================== Request-Callback Modal Area ======================== */
+#request_callback .modal-dialog {
+    max-width: 420px;
+}
+#request_callback .modal-content {
+    border-radius: 10px;
+    /* overflow: hidden; */
+}
+#request_callback .modal-body {
+    padding: 0;
+}
+#request_callback .form-1 form {
+    position: relative;
+    box-shadow: none;
+    width: 100%;
+    background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 1) 100%
+        ),
+        url(https://www.myassignmentservices.com/assets/front/images/bg-dot.png)
+            left top repeat;
+}
+#request_callback .form-1 form .title {
+    font-size: 28px;
+    font-weight: 700;
+}
+#request_callback .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    text-align: right;
+    padding: 18px 25px;
+}
+#request_callback .close-btn button {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+/* ======================== Request-Callback Modal Area ======================== */
+
+/* ======================== Map-Sec Area ======================== */
+.map-sec {
+    position: relative;
+}
+
+.map-sec > img {
+    width: 100%;
+}
+
+.map-sec .country-sec {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.map-sec .country-sec .map-points {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    padding: 2px;
+}
+
+.map-sec .country-sec .map-points span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.map-sec .country-sec .map-line-1 {
+    position: absolute;
+    background-color: var(--primary-color);
+}
+
+.map-sec .country-sec .map-line-1 .map-line-2 {
+    position: absolute;
+    background-color: var(--primary-color);
+}
+
+.map-sec .country-sec .university {
+    position: absolute;
+    background-color: #fff;
+    min-width: 120px;
+}
+
+.map-sec .country-sec .university:hover {
+    z-index: 2;
+}
+
+.map-sec .country-sec .university .country-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 15px;
+    white-space: nowrap;
+    padding: 5px 12px;
+    cursor: pointer;
+}
+
+.map-sec .country-sec .university .country-name::after {
+    content: "\f067";
+    font-family: "Font Awesome 5 Pro";
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.map-sec .country-sec .university .country-name.active::after {
+    content: "\f068";
+}
+
+.map-sec .country-sec .university .university-list {
+    display: none;
+}
+
+.map-sec .country-sec .university .university-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.map-sec .country-sec .university .university-list ul li {
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary-color);
+    padding: 8px 15px;
+}
+
+.map-sec .country-sec .university .university-list ul li:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+/* ========= United-State ========= */
+.map-sec .country-sec .united-state {
+    position: absolute;
+    left: 19%;
+    top: 42%;
+}
+.map-sec .country-sec .united-state .map-line-1 {
+    top: 6px;
+    left: 10px;
+    width: 40px;
+    height: 2px;
+    transform-origin: left center;
+    transform: rotate(15deg);
+}
+
+.map-sec .country-sec .united-state .map-line-1 .map-line-2 {
+    right: 0;
+    width: 50px;
+    height: 2px;
+    transform-origin: right center;
+    transform: rotate(244deg);
+}
+
+.map-sec .country-sec .united-state .university {
+    top: 64px;
+    left: -10px;
+}
+
+/* ========= United-Kingdom ========= */
+.map-sec .country-sec .united-kingdom {
+    position: absolute;
+    left: 46%;
+    top: 32%;
+}
+.map-sec .country-sec .united-kingdom .map-line-1 {
+    top: 6px;
+    left: 1px;
+    width: 50px;
+    height: 2px;
+    transform-origin: left center;
+    transform: rotate(168deg);
+}
+
+.map-sec .country-sec .united-kingdom .map-line-1 .map-line-2 {
+    right: 0;
+    width: 50px;
+    height: 2px;
+    transform-origin: right center;
+    transform: rotate(124deg);
+}
+
+.map-sec .country-sec .united-kingdom .university {
+    top: 64px;
+    left: -140px;
+}
+
+/* ========= Germany ========= */
+.map-sec .country-sec .germany {
+    position: absolute;
+    left: 49%;
+    top: 34%;
+}
+.map-sec .country-sec .germany .map-line-1 {
+    top: 5px;
+    left: 12px;
+    width: 75px;
+    height: 2px;
+    transform-origin: left center;
+    transform: rotate(0deg);
+}
+
+.map-sec .country-sec .germany .map-line-1 .map-line-2 {
+    right: 0;
+    width: 60px;
+    height: 2px;
+    transform-origin: right center;
+    transform: rotate(224deg);
+}
+
+.map-sec .country-sec .germany .university {
+    top: 45px;
+    left: 75px;
+}
+
+/* ========= Italy ========= */
+.map-sec .country-sec .italy {
+    position: absolute;
+    left: 50.2%;
+    top: 40.2%;
+}
+.map-sec .country-sec .italy .map-line-1 {
+    top: 7px;
+    left: 10px;
+    width: 40px;
+    height: 2px;
+    transform-origin: left center;
+    transform: rotate(30deg);
+}
+
+.map-sec .country-sec .italy .map-line-1 .map-line-2 {
+    right: 0;
+    width: 60px;
+    height: 2px;
+    transform-origin: right center;
+    transform: rotate(235deg);
+}
+
+.map-sec .country-sec .italy .university {
+    top: 88px;
+    left: -8px;
+}
+
+/* ========= South-Korea ========= */
+.map-sec .country-sec .south-korea {
+    position: absolute;
+    left: 80.8%;
+    top: 43.5%;
+}
+.map-sec .country-sec .south-korea .map-line-1 {
+    top: 5px;
+    left: 2px;
+    width: 50px;
+    height: 2px;
+    transform-origin: left center;
+    transform: rotate(168deg);
+}
+
+.map-sec .country-sec .south-korea .map-line-1 .map-line-2 {
+    right: 0;
+    width: 60px;
+    height: 2px;
+    transform-origin: right center;
+    transform: rotate(115deg);
+}
+
+.map-sec .country-sec .south-korea .university {
+    top: 70px;
+    left: -118px;
+}
+
+/* ========= Australia ========= */
+.map-sec .country-sec .australia {
+    position: absolute;
+    left: 82.8%;
+    top: 77.2%;
+}
+.map-sec .country-sec .australia .map-line-1 {
+    top: 0px;
+    left: 5px;
+    width: 50px;
+    height: 2px;
+    transform-origin: left center;
+    transform: rotate(210deg);
+}
+
+.map-sec .country-sec .australia .map-line-1 .map-line-2 {
+    right: 0;
+    width: 60px;
+    height: 2px;
+    transform-origin: right center;
+    transform: rotate(115deg);
+}
+
+.map-sec .country-sec .australia .university {
+    top: 8px;
+    left: -144px;
+}
+
+/* ========= Newzealand ========= */
+.map-sec .country-sec .newzealand {
+    position: absolute;
+    left: 93%;
+    top: 87%;
+}
+.map-sec .country-sec .newzealand .map-line-1 {
+    top: 3px;
+    left: 2px;
+    width: 80px;
+    height: 2px;
+    transform-origin: left center;
+    transform: rotate(185deg);
+}
+
+.map-sec .country-sec .newzealand .map-line-1 .map-line-2 {
+    right: 0;
+    width: 60px;
+    height: 2px;
+    transform-origin: right center;
+    transform: rotate(125deg);
+}
+
+.map-sec .country-sec .newzealand .university {
+    top: 32px;
+    left: -168px;
+}
+
+/* ========= Canada ========= */
+.map-sec .country-sec .canada {
+    position: absolute;
+    left: 14%;
+    top: 26%;
+}
+
+.map-sec .country-sec .canada .map-line-1 {
+    top: 8px;
+    left: 1px;
+    width: 43px;
+    height: 2px;
+    transform-origin: left center;
+    transform: rotate(150deg);
+}
+
+.map-sec .country-sec .canada .map-line-1 .map-line-2 {
+    right: 0;
+    width: 50px;
+    height: 2px;
+    transform-origin: right center;
+    transform: rotate(132deg);
+}
+
+.map-sec .country-sec .canada .university {
+    top: 74px;
+    left: -104px;
+}
+
+/* ======================== End Map-Sec Area ======================== */
+
+/* ======================== M-University-Sec Area ======================== */
+.m-university-sec > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid var(--primary-color);
+}
+.m-university-sec > ul > li:not(:last-child) {
+    border-bottom: 1px solid var(--primary-color);
+}
+.m-university-sec > ul > li .country-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    color: var(--primary-color);
+    font-weight: 700;
+    padding: 8px 15px;
+}
+.m-university-sec > ul > li .country-name.active {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.m-university-sec > ul > li .country-name::after {
+    content: "\f067";
+    font-family: "Font Awesome 5 Pro";
+    font-size: 12px;
+    margin-left: 10px;
+}
+.m-university-sec > ul > li .country-name.active::after {
+    content: "\f068";
+}
+.m-university-sec > ul > li .country-name > span {
+    display: flex;
+    align-items: center;
+}
+.m-university-sec > ul > li .country-name > span > img {
+    flex: none;
+    height: 15px;
+    margin-right: 8px;
+}
+.m-university-sec > ul > li .university-list {
+    display: none;
+    padding: 12px 0;
+}
+.m-university-sec > ul > li .university-list li {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 3px 0;
+}
+
+/* ======================== End M-University-Sec Area ======================== */
+
+/* =========== Whatsapp Button =========== */
+.whatsAppCTAWrp {
+    position: fixed;
+    bottom: 40px;
+    right: 21px;
+    z-index: 999;
+}
+
+.whatsAppCTAWrp p a {
+    background: #25d366;
+    padding: 2px 9px;
+    color: #fff;
+    border-radius: 4px;
+    display: inline-block;
+    line-height: normal;
+    overflow: hidden;
+    width: 45px;
+    height: 45px;
+    text-decoration: none;
+}
+
+.whtIcon {
+    color: #fff;
+    font-size: 32px;
+}
+
+.whatsAppCTAWrp p a i.fa {
+    font-size: 35px;
+}
+
+span.whatsAppText {
+    float: right;
+}
+
+span.whatsAppText strong {
+    display: block;
+    font-size: 18px;
+    line-height: 19px;
+    color: #fff;
+}
+
+span.whatsAppText small {
+    font-size: 15px;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    color: #edf0f5;
+}
+/* =========== End Whatsapp Button =========== */
